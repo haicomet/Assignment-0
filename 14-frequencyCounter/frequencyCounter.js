@@ -1,5 +1,10 @@
 function frequencyCounter(word) {
-  // Insert code here;
+  const charCount = {}
+
+  for (const char of word)
+    charCount[char] = (charCount[char] || 0) + 1
+  
+  return charCount
 }
 
 // Do not edit this line;
